@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
     private DatabaseViewModel databaseViewModel;
-    Button btn_logout,btnbanana,btnCheckOrders,uploadImage,btnorange,btn_reg_agent,btn_add_agent;
+    Button btn_logout,btnbanana,btnCheckOrders,uploadImage,btnorange,btn_reg_agent,btn_add_agent,btn_open_report;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
     String buyerId;
@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         progressBar=findViewById(R.id.progressBar);
         btn_reg_agent=findViewById(R.id.btn_reg_agent);
         btn_add_agent=findViewById(R.id.btn_add_agent);
+        btn_open_report=findViewById(R.id.btn_open_report);
         progressBar.setVisibility(View.GONE);
         firebaseDatabase = FirebaseDatabase.getInstance();
         btn_add_agent.setOnClickListener(v->{
@@ -112,6 +113,9 @@ public class MainActivity extends AppCompatActivity {
         });
         btn_reg_agent.setOnClickListener(v->{
             startActivity(new Intent(this,AgentRegistration.class));
+        });
+        btn_open_report.setOnClickListener(v->{
+            startActivity(new Intent(this,ReportActivity.class));
         });
 
         btn_logout.setOnClickListener(v->{
