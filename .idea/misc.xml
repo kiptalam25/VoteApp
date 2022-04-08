@@ -5,17 +5,25 @@
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.15885416666666666" />
         <entry key="../../Android/Sdk/platforms/android-31/data/res/layout/simple_list_item_1.xml" value="0.14739583333333334" />
+        <entry key="../../Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.10208333333333333" />
+        <entry key="../../Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_item.xml" value="0.10208333333333333" />
         <entry key="app/src/main/res/drawable-v24/background_left_receiver.xml" value="0.1921875" />
         <entry key="app/src/main/res/drawable-v24/background_right_sender.xml" value="0.10416666666666667" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22395833333333334" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.22395833333333334" />
         <entry key="app/src/main/res/layout/activity_admin.xml" value="0.19429347826086957" />
         <entry key="app/src/main/res/layout/activity_admin2.xml" value="0.17604166666666668" />
+        <entry key="app/src/main/res/layout/activity_agent_registration.xml" value="0.14166666666666666" />
         <entry key="app/src/main/res/layout/activity_agents.xml" value="0.165625" />
+        <entry key="app/src/main/res/layout/activity_contestant.xml" value="0.15677083333333333" />
         <entry key="app/src/main/res/layout/activity_create_account.xml" value="0.16458333333333333" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.12916666666666668" />
         <entry key="app/src/main/res/layout/activity_orders.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_political_seats.xml" value="0.15677083333333333" />
+        <entry key="app/src/main/res/layout/activity_register_location.xml" value="0.16847826086956522" />
+        <entry key="app/src/main/res/layout/activity_report.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_votes.xml" value="0.1" />
         <entry key="app/src/main/res/layout/agents_adapter_layout.xml" value="0.165625" />
         <entry key="app/src/main/res/layout/chat_item_left_received.xml" value="0.12552083333333333" />
         <entry key="app/src/main/res/layout/chat_item_right_sent.xml" value="0.12552083333333333" />

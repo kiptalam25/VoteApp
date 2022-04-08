@@ -74,7 +74,7 @@ FirebaseAuth auth;
             if (currentUser != null) {
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
-                finish();
+//                finish();
             }
         });
 

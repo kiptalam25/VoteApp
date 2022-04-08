@@ -24,6 +24,8 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.sqlite.orderapp.ContestantActivity;
+import com.sqlite.orderapp.models.Contestant;
 import com.sqlite.orderapp.services.model.Orders;
 import com.sqlite.orderapp.services.model.Users;
 
@@ -379,5 +381,13 @@ public class FirebaseInstanceDatabase {
         final StorageReference fileReference = storageReference.child(timeStamp + "." + getFileExtension(imageUri, context));
         fetchFileReferenceImage.setValue(fileReference);
         return fetchFileReferenceImage;
+    }
+
+    public MutableLiveData<Boolean> addContestant(Contestant contestant) {
+        final MutableLiveData<Boolean> successAddContestant= new MutableLiveData<>();
+
+        instance.getReference("Contestant").push().setValue(contestant).addOnCompleteListener(task ->
+                successAddContestant.setValue(true)).addOnFailureListener(task-> successAddContestant.setValue(false));
+        return successAddContestant;
     }
 }

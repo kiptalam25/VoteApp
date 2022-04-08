@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
     private DatabaseViewModel databaseViewModel;
-    Button btn_logout,btnbanana,btnCheckOrders,uploadImage,btnorange;
+    Button btn_logout,btnbanana,btnCheckOrders,uploadImage,btnorange,btn_reg_agent,btn_add_agent;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
     String buyerId;
@@ -67,9 +67,13 @@ public class MainActivity extends AppCompatActivity {
 
         uploadImage=findViewById(R.id.uploadImage);
         progressBar=findViewById(R.id.progressBar);
+        btn_reg_agent=findViewById(R.id.btn_reg_agent);
+        btn_add_agent=findViewById(R.id.btn_add_agent);
         progressBar.setVisibility(View.GONE);
         firebaseDatabase = FirebaseDatabase.getInstance();
-
+        btn_add_agent.setOnClickListener(v->{
+            startActivity(new Intent(this,ReportActivity.class));
+        });
         // below line is used to get reference for our database.
         databaseReference = firebaseDatabase.getReference("Orders");
 
@@ -82,6 +86,12 @@ public class MainActivity extends AppCompatActivity {
         btnbanana=findViewById(R.id.btnbanana);
         btnCheckOrders=findViewById(R.id.btnCheckOrders);
         btnorange=findViewById(R.id.btnorange);
+        Button btn_add_contestant=findViewById(R.id.btn_add_contestant);
+
+
+        btn_add_contestant.setOnClickListener(v->{
+            startActivity(new Intent(this,ContestantActivity.class));
+        });
 
         uploadImage.setOnClickListener(v->{
             openImage();
@@ -98,9 +108,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnorange.setOnClickListener(v->{
-            startActivity(new Intent(this, AdminActivity.class));
+            startActivity(new Intent(this, RegisterLocation.class));
         });
-
+        btn_reg_agent.setOnClickListener(v->{
+            startActivity(new Intent(this,AgentRegistration.class));
+        });
 
         btn_logout.setOnClickListener(v->{
             FirebaseAuth.getInstance().signOut();
@@ -207,7 +219,6 @@ progressBar.setVisibility(View.VISIBLE);
            @Override
            public void onFailure(@NonNull Exception e) {
                Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-
            }
        });
        DatabaseReference orderRef = firebaseDatabase.getReference("OrderList")

@@ -9,6 +9,8 @@ import androidx.lifecycle.ViewModel;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.storage.StorageReference;
+import com.sqlite.orderapp.ContestantActivity;
+import com.sqlite.orderapp.models.Contestant;
 import com.sqlite.orderapp.repository.FirebaseInstanceDatabase;
 import com.sqlite.orderapp.services.model.Orders;
 import com.sqlite.orderapp.services.model.Users;
@@ -17,6 +19,7 @@ import com.sqlite.orderapp.services.model.Users;
 public class DatabaseViewModel extends ViewModel {
     private FirebaseInstanceDatabase instance;
     public LiveData<Boolean> successAddUserDb;
+    public LiveData<Boolean> successAddContestant;
     public LiveData<DataSnapshot> fetchUserCurrentData;
     public LiveData<DataSnapshot> fetchUserNames;
     public LiveData<DataSnapshot> fetchSelectedProfileUserData;
@@ -43,6 +46,10 @@ public class DatabaseViewModel extends ViewModel {
 
     public void addUserDatabase(Users user) {
         successAddUserDb = instance.addUserInDatabase(user);
+    }
+
+    public void addContestant(Contestant contestant){
+        successAddContestant=instance.addContestant(contestant);
     }
 
     public void fetchingUserDataCurrent() {

@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "466809616726",
-    "project_id": "orderapp-c084f",
-    "storage_bucket": "orderapp-c084f.appspot.com"
+    "project_number": "504424705389",
+    "project_id": "voteapp-71dc5",
+    "storage_bucket": "voteapp-71dc5.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:466809616726:android:6fedddfbf04a0bdb463ef7",
+        "mobilesdk_app_id": "1:504424705389:android:e21fa35b29017f74f03e64",
         "android_client_info": {
           "package_name": "com.sqlite.orderapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "466809616726-ms1i0dm5kqru8b5tpm02o3thdtnm5ooj.apps.googleusercontent.com",
+          "client_id": "504424705389-2gjdhamkj5ampandtpca1mapo8743o6v.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCn5DVtVDzCjeVIF4MT-YM60invrMDqj6s"
+          "current_key": "AIzaSyBJjwe0dRRKs4-SsIhJEnjKtxH9gprnrPM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "466809616726-ms1i0dm5kqru8b5tpm02o3thdtnm5ooj.apps.googleusercontent.com",
+              "client_id": "504424705389-2gjdhamkj5ampandtpca1mapo8743o6v.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

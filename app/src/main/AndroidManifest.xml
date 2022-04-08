@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sqlite.orderapp" >
+    package="com.sqlite.orderapp">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,25 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.OrderApp" >
+        android:theme="@style/Theme.OrderApp">
+        <activity
+            android:name=".VotesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ReportActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ContestantActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AgentRegistration"
+            android:exported="true" />
+        <activity
+            android:name=".PoliticalSeats"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterLocation"
+            android:exported="true" />
         <activity
             android:name=".AdminActivity"
             android:exported="true"
@@ -25,7 +43,7 @@
             android:exported="true" />
         <activity
             android:name=".account.LoginActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
